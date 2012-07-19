@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.epita.hmv"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+    <!-- Autoriser l'application à aller sur Internet -->
+	<uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:debuggable="true" >
+        <!-- Page d'accueil avec reconnaissance vocale et liste de mots -->
+        <activity
+            android:label="@string/app_name"
+            android:name=".HearMyVoiceAndroidActivity"
+            android:debuggable="true">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Page du web explorer -->
+        <activity android:name=".WebCallActivity"></activity>
+    </application>
+
+</manifest>

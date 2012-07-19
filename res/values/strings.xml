@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hear My Voice</string>
+    <string name="Title">Hear My voice</string>
+    <string name="buttonClickToSpeak">Click to speak!</string>
+</resources>
